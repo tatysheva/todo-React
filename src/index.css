@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+* {
+  transition: 0.3s all;
+  user-select: none;
+}
+
+:root {
+  --text: #04395e;
+}
+
+.App {
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #fff;
+}
+
+.top {
+  text-align: center;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 28px;
+  margin: 0;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* .task-input {
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: var(--text);
+  display: flex;
+  padding: 5px;
+} */
+
+.task-input input {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 10px 0;
+  padding: 10px 10px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  width: 250px;
+}
+
+.task-input button {
+  padding: 10px 7px;
+  border-radius: 50%;
+  border: none;
+  color: #222222;
+  background-color: rgb(77, 199, 199);
+  cursor: pointer;
+  outline: none;
+  margin-left: 5px;
+}
+
+.task {
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.task:hover {
+  background-color: #04395e3d;
+}
+
+.task p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  color: #fff;
+}
+
+.action-btn {
+  cursor: pointer;
+  margin-left: 10px;
+}
+.action-btn:hover {
+  background-color: #04395e3d;
+  border-radius: 5px;
+}
