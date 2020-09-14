@@ -1,3 +1,4 @@
+import { cloneDeep } from 'lodash';
 import React from 'react';
 import Task from './components/Task';
 import TasksInput from './components/TasksInput';
@@ -15,15 +16,17 @@ class App extends React.Component {
     };
   }
 
-  addTask =  task => {
-    this.setState(state => {
-      let { tasks } = state;
-      tasks.push({
-        id: tasks.length !== 0 ? task.length : 0,
+  addTask = task => {
+    this.setState(prevState => {
+      const state = cloneDeep(prevState);
+
+      state.tasks.push({
+        id: state.tasks.length !== 0 ? task.length : 0,
         title: task,
         done: false
       });
-      return tasks;
+
+      return state;
     });
   };
 
